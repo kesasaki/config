@@ -1,0 +1,15 @@
+[user] 
+  name = Kei Sasaki
+  email = sasaki.kei@nitzlab.com
+[alias]
+  co = checkout
+  ci = commit -v
+  br = branch
+  st = status -s
+  ct = checkout --theirs
+  cm = checkout --ours
+[core]
+  editor = vim -c \" set fenc=utf-8\"
+[color]
+  ui = auto
+
