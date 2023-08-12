@@ -1,17 +1,3 @@
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'flyinshadow/php_localvarcheck.vim'
-Plugin 'godlygeek/tabular'
-
-call vundle#end()
-filetype plugin indent on
-
 set clipboard=unnamed
 set nocompatible
 set number
@@ -36,17 +22,13 @@ let php_noShortTags = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavAllows = 1
 let g:miniBufExplMapCTabSwitchBuffs = 1
-let g:php_localvarcheck_enabe = 1
-let g:php_localvarcheck_global = 0
 autocmd BufNewFile,BufRead *.html set filetype=php
 autocmd BufNewFile,BufRead *.inc set filetype=php
 autocmd BufNewFile,BufRead *.tpl set filetype=html
 autocmd BufNewFile,BufRead *.vue set filetype=html
 nnoremap <expr> gr ':vimgrep ;\<' . expand('<cword>') . '\>; **/*.c \|cw'
 hi Comment ctermfg=gray
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
 nnoremap :t :Tab/\|
-
